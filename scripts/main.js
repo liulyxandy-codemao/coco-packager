@@ -41,7 +41,7 @@ const {workid, workname} = await prompts([
     }
 ]);
 
-const data = await axios.get(`https://api-creation.codemao.cn/coconut/web/work/${230315652}/load?channel=0`)
+const data = await axios.get(`https://api-creation.codemao.cn/coconut/web/work/${workid}/load?channel=0`)
 const bcmc_url = data.data.data.bcmc_url;
 
 console.log("[PACKAGER] work: geturl", bcmc_url)
